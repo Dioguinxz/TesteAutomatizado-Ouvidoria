@@ -48,7 +48,8 @@ public class Tela {
             WebElement mensagem = driver.findElement(By.id("form-field-mensagem"));
             digitarDoUsuario(mensagem, "Parabéns");
 
-            WebElement botaoEnviarMensagem = driver.findElement(By.xpath("//span[contains(text(), 'Pronto, quero enviar a mensagem')]"));
+            WebElement botaoEnviarMensagem = driver.findElement(By.xpath
+                    ("//span[contains(text(), 'Pronto, quero enviar a mensagem')]"));
             botaoEnviarMensagem.click();
 
         } catch (InterruptedException e) {
