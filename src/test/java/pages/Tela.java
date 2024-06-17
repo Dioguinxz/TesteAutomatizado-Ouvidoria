@@ -52,6 +52,7 @@ public class Tela {
                     ("//span[contains(text(), 'Pronto, quero enviar a mensagem')]"));
             botaoEnviarMensagem.click();
 
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
