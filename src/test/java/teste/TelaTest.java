@@ -1,23 +1,34 @@
 package teste;
 
-import junit.framework.TestCase;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.*;
+import pages.Tela;
 
-public class TelaTest extends TestCase {
-    static WebDriver driver;
-    static Tela tela;
+public class TelaTest {
 
-    @Test
-    public void test(){
+    private WebDriver driver;
+    private Tela tela;
+
+    @Before
+    public void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\Programação\\TestesAutomatizados\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://qi.edu.br/ouvidoria/");
-
         tela = new Tela(driver);
-        tela.preecherDados();
+    }
 
+    @Test
+    public void testPreencherDados() {
+        tela.preencherDados();
+    }
+
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
