@@ -26,7 +26,7 @@ public class TelaTest {
     }
 
     @After
-    public void tearDown() {
+    public void encerrar() {
         if (driver != null) {
             driver.quit();
         }
