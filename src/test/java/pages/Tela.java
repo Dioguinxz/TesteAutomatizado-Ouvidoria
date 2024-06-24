@@ -31,13 +31,13 @@ public class Tela {
             digitarDoUsuario(nome, "José Carlos");
 
             WebElement email = driver.findElement(By.id("form-field-email"));
-            digitarDoUsuario(email, "doassis@hotmail.com.br");
+            digitarDoUsuario(email, "joseCarlos@hotmail.com");
 
             WebElement telefone = driver.findElement(By.id("form-field-telefone"));
-            digitarDoUsuario(telefone, "(48) 99672-6746");
+            digitarDoUsuario(telefone, "(54) 99874-4586");
 
             WebElement cpf = driver.findElement(By.id("form-field-cpf"));
-            digitarDoUsuario(cpf, "869.885.730-20");
+            digitarDoUsuario(cpf, "179.825.230-20");
 
             WebElement cidade = driver.findElement(By.id("form-field-cidade"));
             digitarDoUsuario(cidade, "Canoas");
